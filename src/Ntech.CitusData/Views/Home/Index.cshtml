@@ -1,0 +1,30 @@
+﻿@inject Tenant Tenant
+@model QuestionListViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Citus Data with ASP.NET Core</a>.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Welcome to <strong>@Tenant.Name</strong></h1>
+        <h3>@Tenant.Description</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h4>Popular questions</h4>
+        <ul>
+            @foreach (var question in Model.Questions)
+            {
+                <li>@question.Title</li>
+            }
+        </ul>
+    </div>
+</div>

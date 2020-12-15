@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+ citusdb:
+    image: citusdata/citus
+    container_name: postgresql
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - ntech
+
+volumes:
+  postgres-data:
+
+networks:
+  ntech:
+    name: ntech-network

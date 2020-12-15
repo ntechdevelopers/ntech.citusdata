@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+ citusdb:
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Ntech@123
+      - PGUSER="postgres"
+      - PGPASSWORD="Ntech@123"
+    ports:
+      - "5432:5432"
