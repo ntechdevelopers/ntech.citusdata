@@ -33,3 +33,5 @@ Bài viết
 - 127.0.0.1	api.ntechdevelopers.local
 
 # blog.ntechdevelopers.com
+
+http://blog.ntechdevelopers.com/citus-data-tuong-de-ma-kho-khong-tuong/
