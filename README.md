@@ -1,7 +1,7 @@
 Citus Data Setup
 
 Bài viết
-# http://blog.ntechdevelopers.com/xay-dung-web-app-multi-tenant-don-gian-voi-citus-data-va-aspnet-core/
+http://blog.ntechdevelopers.com/xay-dung-web-app-multi-tenant-don-gian-voi-citus-data-va-aspnet-core/
 
 - psql connection-string
 - docker exec -it citus_master psql -U postgres
