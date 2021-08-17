@@ -16,5 +16,13 @@ CREATE TABLE questions (
     updated_at timestamptz NOT NULL
 );
 
+CREATE TABLE states (
+  code char(2) PRIMARY KEY,
+  full_name text NOT NULL,
+  question_id uuid NOT NULL,
+  general_sales_tax numeric(4,3)
+);
+
+
 ALTER TABLE tenants ADD PRIMARY KEY (id);
 ALTER TABLE questions ADD PRIMARY KEY (id, tenant_id);
